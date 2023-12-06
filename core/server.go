@@ -150,10 +150,8 @@ func StartServer(path string, port string, auth string) {
 				var thisOne Article
 				thisOne.Title = strings.Replace(f.Name(), ".md", "", 1)
 				thisOne.SubTitle = f.ModTime().Format("2006-01-02")
-				dir, _ := filepath.Split(path)
-				thisOne.Group = strings.Replace(dir, "public"+string(os.PathSeparator), "", 1)
-				thisOne.Group = strings.ReplaceAll(thisOne.Group, string(os.PathSeparator), "")
-				if thisOne.Group == "" {
+				thisOne.Group = filepath.Base(filepath.Dir(path))
+				if thisOne.Group == "public" {
 					thisOne.Group = "all"
 				}
 				thisOne.Avatar = "https://gw.alipayobjects.com/zos/antfincdn/UCSiy1j6jx/xingzhuang.svg"
