@@ -1,0 +1,51 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] GET    /scripts/*filepath        --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] HEAD   /scripts/*filepath        --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (4 handlers)
+[GIN-debug] GET    /                         --> blog/core.StartServer.func2 (4 handlers)
+[GIN-debug] GET    /g/:name                  --> blog/core.StartServer.func3 (4 handlers)
+[GIN-debug] GET    /a/:group/:name           --> blog/core.StartServer.func4 (4 handlers)
+[GIN-debug] GET    /api/menuData             --> blog/core.StartServer.func5 (4 handlers)
+[GIN-debug] GET    /api/group/:name          --> blog/core.StartServer.func6 (4 handlers)
+[GIN-debug] GET    /api/article/:group/:name --> blog/core.StartServer.func7 (4 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8081
+[GIN] 2023/12/06 - 09:09:49 | 200 |         714µs |             ::1 | GET      "/"
+[GIN] 2023/12/06 - 09:09:49 | 200 |     10.9533ms |             ::1 | GET      "/g/all"
+[GIN] 2023/12/06 - 09:09:50 | 200 |     58.6807ms |             ::1 | GET      "/static/umi.1ca9308c.css"
+[GIN] 2023/12/06 - 09:09:50 | 200 |     57.6212ms |             ::1 | GET      "/scripts/loading.js"
+[GIN] 2023/12/06 - 09:09:50 | 200 |     88.9474ms |             ::1 | GET      "/static/umi.208b7260.js"
+[GIN] 2023/12/06 - 09:09:50 | 200 |       506.3µs |             ::1 | GET      "/static/t__plugin-layout__Layout.8f39539f.chunk.css"
+[GIN] 2023/12/06 - 09:09:50 | 200 |      1.0124ms |             ::1 | GET      "/static/t__plugin-layout__Layout.3d3c1190.async.js"
+[GIN] 2023/12/06 - 09:09:50 | 200 |      3.9284ms |             ::1 | GET      "/static/905.6d6897a4.async.js"
+[GIN] 2023/12/06 - 09:09:50 | 200 |      5.0554ms |             ::1 | GET      "/static/915.ca4cd799.async.js"
+[GIN] 2023/12/06 - 09:09:50 | 200 |      5.5256ms |             ::1 | GET      "/static/747.b72702d2.async.js"
+[GIN] 2023/12/06 - 09:09:50 | 200 |      8.5495ms |             ::1 | GET      "/static/663.4d64219a.async.js"
+[GIN] 2023/12/06 - 09:09:50 | 200 |            0s |             ::1 | GET      "/static/p__Index.6798c37a.async.js"
+[GIN] 2023/12/06 - 09:09:50 | 200 |      5.7461ms |             ::1 | GET      "/static/178.0027ae60.async.js"
+[GIN] 2023/12/06 - 09:09:50 | 200 |     51.9336ms |             ::1 | GET      "/static/812.ad826a87.async.js"
+[GIN] 2023/12/06 - 09:09:50 | 200 |       900.2µs |             ::1 | GET      "/api/group/all"
+[GIN] 2023/12/06 - 09:09:50 | 200 |      1.3971ms |             ::1 | GET      "/api/menuData?token%20=%20123"
+[GIN] 2023/12/06 - 09:09:52 | 200 |            0s |             ::1 | GET      "/static/p__Article.727603f0.async.js"
+[GIN] 2023/12/06 - 09:09:52 | 200 |       1.438ms |             ::1 | GET      "/static/p__Article.a8c70798.chunk.css"
+[GIN] 2023/12/06 - 09:09:52 | 200 |      9.5107ms |             ::1 | GET      "/static/946.21e3dce1.async.js"
+[GIN] 2023/12/06 - 09:09:53 | 200 |       484.7µs |             ::1 | GET      "/api/article/all/909"
+[GIN] 2023/12/06 - 09:09:53 | 200 |      1.0931ms |             ::1 | GET      "/api/group/all"
+[GIN] 2023/12/06 - 09:09:54 | 200 |       556.4µs |             ::1 | GET      "/api/article/分类1/123"
+[GIN] 2023/12/06 - 09:09:56 | 200 |      1.5314ms |             ::1 | GET      "/api/group/all"
+[GIN] 2023/12/06 - 09:09:56 | 200 |       939.3µs |             ::1 | GET      "/api/article/分类2/234"
+[GIN] 2023/12/06 - 09:09:57 | 200 |       731.8µs |             ::1 | GET      "/api/group/all"
+[GIN] 2023/12/06 - 09:09:58 | 200 |       996.7µs |             ::1 | GET      "/api/article/分类3/333"
+[GIN] 2023/12/06 - 09:09:59 | 200 |      1.9202ms |             ::1 | GET      "/api/group/all"
+[GIN] 2023/12/06 - 09:09:59 | 200 |       325.4µs |             ::1 | GET      "/api/group/分类1"
+[GIN] 2023/12/06 - 09:10:00 | 200 |       996.8µs |             ::1 | GET      "/api/article/分类1/123"
+[GIN] 2023/12/06 - 09:10:01 | 200 |       749.9µs |             ::1 | GET      "/api/group/分类2"
+[GIN] 2023/12/06 - 09:10:02 | 200 |       951.6µs |             ::1 | GET      "/api/group/分类3"
+[GIN] 2023/12/06 - 09:10:03 | 200 |       788.3µs |             ::1 | GET      "/api/article/文件下载/index"
